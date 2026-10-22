@@ -1,0 +1,169 @@
+
+/*
+Name: Lacy Austin
+Date: October 21, 2026
+Assignment: Week 2 - JSON and Bootstrap
+
+Purpose:
+Style the favorite singers website with
+a concert background, Bootstrap cards,
+and a colorful music theme.
+*/
+
+/* Main website background */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #171333;
+
+    background-image:
+        linear-gradient(
+            135deg,
+            rgba(17, 24, 58, 0.75),
+            rgba(72, 39, 111, 0.60),
+            rgba(22, 69, 113, 0.70)
+        ),
+        url("../images/concert-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+/* Main heading */
+header h1 {
+    color: #ffffff;
+    font-weight: bold;
+
+    text-shadow: 2px 3px 8px
+        rgba(0, 0, 0, 0.35);
+}
+
+/* Introduction paragraph */
+header p {
+    color: #f0eafa;
+    font-size: 1.2rem;
+}
+
+/* Both Bootstrap cards */
+.music-card,
+.playlist-card {
+    background-color: #ffffff;
+    color: #25345a;
+
+    border: none;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px
+        rgba(0, 0, 0, 0.25);
+}
+
+/* Concert picture */
+.concert-image {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+    display: block;
+}
+
+/* Music card heading */
+.music-card h5 {
+    color: #273b6a;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Music card paragraph */
+.music-card p {
+    color: #35436a;
+    font-size: 1rem;
+}
+
+/* Playlist card spacing */
+.playlist-card .card-body {
+    padding: 20px;
+}
+
+/* Playlist heading */
+.playlist-card h2 {
+    color: #293963;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-bottom: 0;
+
+    color: #222222;
+    font-size: 0.95rem;
+}
+
+/* Table heading */
+.table thead th {
+    background-color: #303f6b;
+    color: white;
+
+    padding: 14px;
+    border: none;
+}
+
+/* Table rows */
+.table tbody td {
+    padding: 13px;
+    vertical-align: middle;
+}
+
+/* Alternating row colors */
+.table-striped tbody tr:nth-of-type(odd) td {
+    background-color: #eeeeee;
+}
+
+/* Table hover effect */
+.table-hover tbody tr:hover td {
+    background-color: #e3ddf5;
+}
+
+/* Footer */
+footer {
+    color: #ffffff;
+    font-size: 0.95rem;
+
+    text-shadow: 1px 2px 4px
+        rgba(0, 0, 0, 0.6);
+}
+
+/* Smaller screens */
+@media (max-width: 576px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .playlist-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .concert-image {
+        height: 230px;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+
+}
